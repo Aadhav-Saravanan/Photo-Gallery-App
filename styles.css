@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  background-color: #0a1620;
+}
+
+header{
+  width: 100%;
+  height: 60px;
+  background-color: #09131b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.logo{
+  font-weight: 700;
+  font-size: 28px;
+  color: #fefefe;
+}
+
+.nav-bar ul{
+  display: flex;
+}
+
+.ham{
+  display: none;
+}
+
+.nav-bar ul li a{
+  display: bloack;
+  color: #fefefe;
+  font-size: 17px;
+  padding: 10px 25px;
+  border-radius: 40px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover{
+  background-color: #0a1620;
+}
+
+.nav-bar ul li a:active{
+  background-color: #0a1620;
+}
+
+@media screen and (max-width: 1032px) {
+  header{
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  header{
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .ham{
+    display: block;
+    cursor: pointer;;
+  }
+
+  .ham .line{
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+
+  .nav-bar{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100vw;
+    background: #09131b;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+  .nav-bar.active{
+    height: 450px;
+  }
+  .nav-bar ul{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.4s;
+    opacity: 0;
+  }
+  .nav-bar.active ul{
+    opacity: 1;
+  }
+  .nav-bar ul li{
+    margin-bottom: 22px;
+  }
+}
+
+/*end of navbar*/
+
+p{
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+  transition: 2s;
+  margin-top: 20px;
+}
+@media screen and (max-width:2560px){
+  p{padding: 0 100px;}
+}
+@media screen and (max-width: 1440px) {
+  p{padding: 0 100px;}
+}
+
+@media screen and (max-width: 1024px) {
+  p{padding: 0 50px;}
+}
+
+p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*images*/
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.container .box .boxy{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+  height: auto;
+  margin-top: 25px;
+}
+
+.container .box .boxy img{
+  width: 100%;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  padding-bottom: 0px;
+}
+.dwlnlogo img{
+  width: 32px;
+  height: 32px;
+  display: flex;
+}
+
+@media screen and (max-width: 430px) {
+  .container .box{
+    flex-direction: column;
+  }
+  .container .box .boxy{
+    width: 60%;
+  }
+  .container .box .boxy img{
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 770px){
+  .container .box .boxy img{
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1030px){
+  .container .box .boxy img{
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1445px){
+  .container .box .boxy img{
+    padding-bottom: 20px;
+  }
+  p{
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  p{
+    font-size: 1.2rem;
+  }
+}
+
+/*end of gallery*/
+

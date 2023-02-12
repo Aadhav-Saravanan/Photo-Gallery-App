@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+  <header>
+    <div class="logo"><a href="index.html" style="color: white;">Pics</a></div>
+    <div class="ham">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="Gallery.html" class="active">Gallery</a></li>
+        <li><a href="about.html" class="active">About us</a></li>
+        <li><a href="#" class="active">Contact us</a></li>
+      </ul>
+     </nav>
+  </header>
+  
+  <script>
+    ham = document.querySelector(".ham");
+    ham.onclick = function(){
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+    }
+  </script>
+    <p>Gallery</p>
+    <div class="dwlnlogo">
+      <a href="photos/sunset-2.jpg" download="sunset"><img src="download.png" class="dwln"></a>
+    </div>
+
+    <div class="container" width: 16px height: 16px>
+      <div class="box">
+        <div class="boxy">
+          <img src="photos/noon-1.jpeg"alt="pic">
+          <img src="photos/noon-2.jpeg" alt="">
+          <img src="photos/noon-3.jpeg" alt="">
+          <img src="photos/sunrise-1.jpg" alt="">
+          <img src="photos/sunrise-2.jpg" alt="">
+          <img src="photos/sunrise-3.jpg" alt="">
+          <img src="photos/sunrise-4.jpeg" alt="">
+          <img src="photos/sunset-1.jpg" alt="">
+          <img src="photos/sunset-2.jpg" alt="">
+        </div>
+
+        <div class="boxy">
+          <img src="photos/noon-2.jpeg" alt="">
+          <img src="photos/noon-3.jpeg" alt="">
+          <img src="photos/noon-1.jpeg" alt="">
+          <img src="photos/sunset-1.jpg" alt="">
+          <img src="photos/sunset-2.jpg" alt="">
+          <img src="photos/sunrise-1.jpg" alt="">
+          <img src="photos/sunrise-2.jpg" alt="">
+          <img src="photos/sunrise-3.jpg" alt="">
+          <img src="photos/sunrise-4.jpeg" alt="">
+        </div>
+
+        <div class="boxy">
+          <img src="photos/sunrise-1.jpg" alt="">
+          <img src="photos/sunrise-2.jpg" alt="">
+          <img src="photos/sunrise-3.jpg" alt="">
+          <img src="photos/sunrise-4.jpeg" alt="">
+          <img src="photos/sunset-1.jpg" alt="">
+          <img src="photos/sunset-2.jpg" alt="">
+          <img src="photos/noon-1.jpeg" alt="">
+          <img src="photos/noon-2.jpeg" alt="">
+          <img src="photos/noon-3.jpeg" alt="">
+
+        </div>
+      </div>
+    </div>
+</body>
+</html>
